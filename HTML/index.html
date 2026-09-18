@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Well Do You Know Sativa?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.9.2/confetti.browser.min.js"></script>
+</head>
+<body>
+ 
+<div class="app">
+  <div class="stage">
+ 
+    <!-- ============== INTRO ============== -->
+    <section id="screen-intro" class="panel">
+      <h1 class="brand outline-text">How Well Do You<br>Know Sativa?</h1>
+      <p class="subtitle">15 questions · pick one answer each · let's see how well you really know me</p>
+      <button class="start-btn" id="start-btn">Let's go!</button>
+    </section>
+ 
+    <!-- ============== QUIZ ============== -->
+    <section id="screen-quiz" class="panel hidden">
+      <div class="progress-row">
+        <span class="progress-label" id="progress-label">Q1 / 15</span>
+        <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+      </div>
+      <h2 class="q-text" id="q-text"></h2>
+      <ul class="options" id="options"></ul>
+      <button class="next-btn" id="next-btn" disabled>Next →</button>
+    </section>
+ 
+    <!-- ============== CALCULATING SPLASH ============== -->
+    <section id="screen-splash" class="panel hidden">
+      <div class="splash">
+        <span class="splash-icon">🧮</span>
+        <p class="splash-text">Crunching the numbers<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+      </div>
+    </section>
+ 
+    <!-- ============== RESULT ============== -->
+    <section id="screen-result" class="panel hidden">
+      <div class="result">
+        <img class="result-icon" id="result-icon" src="" alt="">
+        <h2 class="score-title outline-text" id="score-title"></h2>
+        <p class="score-sub" id="score-sub"></p>
+        <span class="score-points" id="score-points"></span>
+      </div>
+      <button class="restart-btn" id="restart-btn">Try Again 🔁</button>
+    </section>
+ 
+  </div>
+</div>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+ 
